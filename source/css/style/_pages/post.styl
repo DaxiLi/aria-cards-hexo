@@ -1,3 +1,38 @@
+
+.thumbnail_bg 
+    border-radius: 0 0 5px 5px
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+            
+    .post-title__meta a
+        color: rgb(226, 212, 193);
+
+    .post-title__text
+        color: white;
+
+    #leancloud_container_page_pv
+        color: white  
+
+    .post-meta__date
+        color: white  
+
+
+@media screen and (max-width: 764px)
+    .thumbnail_bg 
+        float: top
+        position: absolute
+        z-index -9
+        left 0
+        top 0
+        width: 100vw
+
+
 .post-list
     &>:last-child
         margin-bottom 0
