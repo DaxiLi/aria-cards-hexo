@@ -8,7 +8,7 @@
 
 <% if (show_thumbnail) { %>
 
-    <div class="post-title post thumbnail_bg<% if (theme.meta.toc.enable && page.toc !== false) { %> post__with-toc<% } %>content-card" 
+    <div class="post-title post thumbnail_bg <% if (theme.meta.toc.enable && page.toc !== false) { %> post__with-toc <% } %> content-card" 
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(<%= post.thumbnail || theme.meta.thumbnail.default || theme.mata.post_thumbnail.default %>)">
         <h1 class="post-title__text">
             <%= page.title || theme.meta.title %>
