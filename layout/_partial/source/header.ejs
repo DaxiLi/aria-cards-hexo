@@ -26,4 +26,10 @@
             </div>
         <% } %>
     </div>
+    <script>
+        let u = window.location.pathname;
+        if (!u.endsWith('.html')){
+            window.location.pathname = u + 'index.html' ;
+        }
+    </script>
 </header>
