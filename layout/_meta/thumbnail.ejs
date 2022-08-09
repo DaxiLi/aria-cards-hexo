@@ -5,7 +5,6 @@
     %>
     <% if (theme.lazyload && theme.lazyload.enable === true) { %>
         <div class="post-thumbnail lazy" data-bg="<%= url %>"></div>
-        <!-- <div class="post-thumbnail" style="background-image: url('<%= post.thumbnail || theme.meta.thumbnail.default %>');"></div> -->
     <% } else { %>
         <div class="post-thumbnail" style="background-image: url('<%= url %>');"></div>
     <% } %>
