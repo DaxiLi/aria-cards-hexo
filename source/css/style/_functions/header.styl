@@ -12,6 +12,9 @@
     padding 0 calc(var(--space)/2)
     top 0
     z-index 10
+    box-shadow: 0 0px 3px 0px rgb(0 0 0 / 16%)
+    
+
 
     .header__left
     .header__right
@@ -112,9 +115,17 @@ if (hexo-config('navbar.sticky'))
             backdrop-filter blur(20px)
 
 @media screen and (max-width: 764px)
+    .header
+        // position sticky
+        // box-shadow: 0 0px 10px 0 rgb(0 0 0 / 90%)
+        backdrop-filter blur(1px)
+        
+
     .navbar__menus
         display none !important
     
     .dropdown-icon
         display block !important
+
+// if (hexo-config('navbar.blur'))
 
