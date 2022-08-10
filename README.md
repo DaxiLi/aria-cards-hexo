@@ -1,6 +1,10 @@
-<center><h1>Cards | Theme for Hexo</h1></center>
+<center><h1>Aria-Cards | Theme for Hexo</h1></center>
 
-![](https://theme-cards.ichr.me/assets/img/info.png)
+基于 Cards 根据自己情况稍作修改的 Hexo 主题
+
+配置文件相同，只是自己增加了几项配置
+
+![](https://cdn.jsdelivr.net/gh/DaxiLi/asset@main/img/202208110120083.png)
 
 >   Simple · Swift · Powerful
 >
@@ -10,14 +14,15 @@
 
 ## Demo 演示
 
--   [ChrAlpha Blog](https://blog.ichr.me/)
--   [Theme Cards Demo](https://theme-cards.ichr.me/demo/)
+-   [ChrAlpha Blog(原版)](https://blog.ichr.me/)
+-   [Theme Cards Demo(原版)](https://theme-cards.ichr.me/demo/)
+-   [Deng Blog](https://theme-cards.ichr.me/demo/)
 
 ## Installation 安装
 
 ```bash
 cd hexo
-git clone https://github.com/ChrAlpha/hexo-theme-cards.git themes/cards
+git clone https://github.com/DaxiLi/aria-cards-hexo.git themes/cards
 
 vi _config.yml
 -theme: landscape
@@ -35,25 +40,3 @@ hexo s --debug
 ## Contribution 贡献
 
 欢迎各种形式的贡献，包括但不限于：主题优化，功能添加，代码改进，bug 反馈。期待你的参与！
-
-## 谁在使用 Cards 主题
-
-- ChrAlpha：[ChrAlpha Blog](https://blog.ichr.me/)
-- Alendia：[Alendia's Blog](https://alendia.github.io/)
-- guiqiqi：[初始化博客](https://init.blog/)
-- nozomi：[Hays' Blog](https://blog.haysc.tech/)
-- Flexiston：[Flexiston's Blog](https://blog.flesx.cn/)
-
-更多链接可前往 [Demo - 友链页](https://theme-cards.ichr.me/demo/links/) 探索。
-
-如果你也在使用「Cards」并且希望被他人发现，欢迎 [把网站分享出来](https://github.com/ChrAlpha/hexo-theme-cards/issues/10)！
-
-## Maintainer 维护者
-
-**Theme Cards** © [ChrAlpha](https://github.com/ChrAlpha), Released under the [GPL-3.0](/LICENSE) License.
-
->   [Personal HomePage](https://ichr.me/) · [Blog](https://blog.ichr.me/) · GitHub [@ChrAlpha](https://github.com/ChrAlpha) · Telegram Channel [@ChrAlphaChannel](https://t.me/s/ChrAlphaChannel) · Twitter [@ichralpha](https://twitter.com/ichralpha) · Keybase [@chralpha](https://keybase.io/chralpha) 
-
-Special thanks to [Spencer](https://github.com/spencerwooo) for providing style support for **Theme Cards**.
-
-![](https://theme-cards.ichr.me/assets/img/coverpic.png)
