@@ -55,20 +55,30 @@
 
 .card-entry-with-thumbnail       
     h2
+        margin-block-start: 1rem !important;
+        margin-block-end: 0 !important;
     p
-        margin-block-start: 0.3rem !important;
         margin-block-end: 0 !important;
         display:-webkit-box;
         overflow: hidden; 
         text-overflow: ellipsis;
         -webkit-box-orient:vertical; 
         -webkit-line-clamp: $content_show_lines; 
+        font-size: 1rem
+        line-height: 1.5rem
+        font-weight: light
+        // font-family: 'Brush Script MT', cursive;
+        // font-family: 'Courier New', monospace;
+        font-family: 'Courier New', monospace; !important
     
     .post-entry__title
         font-size: 1.4rem !important
 
-    p
-        font-size: 0.9rem
+
+    @media screen and (max-width: 764px)
+        p 
+            line-height: 1.2rem
+            font-size: 0.9rem
 
 
 .post-entry__content
@@ -80,6 +90,12 @@
         font-weight 450
         line-height 1
     
+    p
+        // font-family: 'Brush Script MT', cursive;
+        // font-family: 'Courier New', monospace;
+        // font-family: Georgia, serif;
+        font-family: 'Trebuchet MS', sans-serif;
+    
 
 .post-meta__cats
 .post-entry__tags
@@ -87,6 +103,7 @@
     position relative
     margin 0.1em 0 0
     z-index 1
+    font-family: Georgia, serif;
 
     &:empty
         display none
@@ -114,12 +131,16 @@
     display block
     z-index 1
     position relative
-    font-size .8em
-    opacity .8
+    font-size .9rem
+    // opacity .8
     font-family rubik,sans-serif
+    color: black !important
+    // font-family: 'Courier New', monospace;
+    font-family: Georgia, serif;
 
     &:empty
         display none
+
 
 .post-entry__header
 .post__header
@@ -209,7 +230,7 @@
     list-style none
 
     p 
-        margin 3px 1px 3px 1px
+        margin 1px 1px 3px 1px
         padding 0
 
 .post__expire
