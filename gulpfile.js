@@ -70,7 +70,7 @@ module.exports = {
 };
 
 gulp.task('rmHexoConfig', function () {
-    gulp.src('./source/**/*.styl')
+    return gulp.src('./source/**/*.styl')
         .pipe(replace(/convert\((.*?)\) \|\|\ /g, ''))
         .pipe(gulp.dest('./tmp'));
 });

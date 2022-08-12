@@ -1,5 +1,33 @@
 <% page.cover = false; %>
 
+
+<% let show_thumbnail = (theme.meta.thumbnail.enable === true && 
+(post.thumbnail || theme.meta.post_thumbnail.default) || 
+(theme.meta.post_thumbnail.enable === true && theme.meta.post_thumbnail.default)) ;
+console.log('boooooooooool', show_thumbnail);
+console.log('thumb post', theme.meta.post_thumbnail.default);
+%>
+
+
+<% if (show_thumbnail) { %>
+
+    <div class="post-title post thumbnail_bg <% if (theme.meta.toc.enable && page.toc !== false) { %> post__with-toc <% } %> content-card" 
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(<%= post.thumbnail || theme.meta.post_thumbnail.default || theme.meta.thumbnail.default %>)"
+    >
+        <h1 class="post-title__text">
+            <%= page.title || theme.meta.title %>
+        </h1>
+        <div class="post-title__meta">
+            <%- partial('_meta/date') %>
+            <%- partial('_meta/categories') %> 
+            <%- partial('_plugins/statistics/index', {position: 'page'}) %> 
+        </div>
+    </div>
+
+
+<% } else { %>
+
+
 <div class="post-title">
     <h1 class="post-title__text">
         <%= page.title || theme.meta.title %>
@@ -10,6 +38,9 @@
         <%- partial('_plugins/statistics/index', {position: 'page'}) %> 
     </div>
 </div>
+
+
+<% } %>
 
 <% if (theme.meta.toc.enable && page.toc !== false) { %>
     <aside class="post-side">
@@ -28,8 +59,9 @@
     </div>
 <% } %>
 
-<article class="post<% if (theme.meta.toc.enable && page.toc !== false) { %> post__with-toc<% } %> content-card">
-    <div class="post__header"><%- partial('_meta/thumbnail') %><%- partial('_meta/expire') %></div>
+<article class="post<% if (theme.meta.toc.enable && page.toc !== false) { %> post__with-toc<% } %> <% if (show_thumbnail) { %> content-margin <% } %> content-card">
+    
+    
     <div class="post__content">
         <%- page.content %>
     </div>

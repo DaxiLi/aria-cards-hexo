@@ -1,5 +1,5 @@
 <div class="post-entry__header"><%- partial('_meta/thumbnail') %></div>
-<div class="post-entry__content">
+<div class="post-entry__content <% if (theme.meta.thumbnail.enable === true && (post.thumbnail || theme.meta.thumbnail.default)) { %> card-entry-with-thumbnail <% } %>">
     <h2 class="post-entry__title">
         <%= post.title || theme.meta.title %>
     </h2>

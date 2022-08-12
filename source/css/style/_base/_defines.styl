@@ -7,13 +7,15 @@ $avatar_height = 96px
 
 $color_main = convert(hexo-config('style.color.main_color')) || #6200ee
 $color_dark = convert(hexo-config('style.color.main_color_dark')) || #bb86fc
-$color_title = #50596c
-$color_title_dark = rgba(252,252,252,0.9)
+$color_title = #1e1e20
+$color_title_dark = rgba(241, 232, 232, 0.9)
 $color_background = #f4f4f4
 $color_background_dark = #121212
-$color_card = #fff
+// post bacgroud color
+$color_card = rgb(255, 255, 252)
 $color_card_dark = #1e1e1e
-$color_font = #4c4d4e
+// $color_font = #4c4d4e
+$color_font = #151414
 $color_font_dark = rgba(255,255,255,0.8)
 $color_codeblock = #eeeeee
 $color_codeblock_dark = #f0f6fc26
@@ -33,7 +35,13 @@ $space_main = convert(hexo-config('style.space.main_space')) || 3.5rem
 $space_sm = convert(hexo-config('style.space.sm_space')) || 1.5rem
 $header_height = 60px
 
+
 $fontsize = 16px
 $code_fontsize = 14px
 $toc_fontsize = 14px
-$lineheight = 1.8
+$lineheight = 1.7
+
+$main_padding =  convert(hexo-config('style.other.main_padding')) || 8px 
+$post_list_padding = convert(hexo-config('style.other.post_list_padding')) || 8px 
+$content_show_lines = hexo-config('style.other.content_show_lines') || 8
+$content_show_lines_simple = hexo-config('style.other.content_show_lines_simple') || 8

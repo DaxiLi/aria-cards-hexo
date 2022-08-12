@@ -1,7 +1,11 @@
 <% if (theme.meta.thumbnail.enable === true && (post.thumbnail || theme.meta.thumbnail.default)) { %>
+    <%  
+    url = post.thumbnail || theme.meta.thumbnail.default;
+    url = url.replace(theme.meta.post_thumbnail.rand_arg, post._id.substr(8) );
+    %>
     <% if (theme.lazyload && theme.lazyload.enable === true) { %>
-        <div class="post-thumbnail lazy" data-bg="<%= post.thumbnail || theme.meta.thumbnail.default %>"></div>
+        <div class="post-thumbnail lazy" data-bg="<%= url %>"></div>
     <% } else { %>
-        <div class="post-thumbnail" style="background-image: url('<%= post.thumbnail || theme.meta.thumbnail.default %>');"></div>
+        <div class="post-thumbnail" style="background-image: url('<%= url %>');"></div>
     <% } %>
 <% } %>
