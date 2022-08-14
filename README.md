@@ -16,7 +16,7 @@
 
 -   [ChrAlpha Blog(原版)](https://blog.ichr.me/)
 -   [Theme Cards Demo(原版)](https://theme-cards.ichr.me/demo/)
--   [Deng Blog](https://theme-cards.ichr.me/demo/)
+-   [Deng Blog](http://blog.jieis.cn)
 
 ## Installation 安装
 
