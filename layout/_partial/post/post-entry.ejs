@@ -11,6 +11,7 @@
         </p>
     <% } else if (theme.meta.auto_excerpt.enable) { %>
         <p>
+            <% console.log(post.title) %>
             <%- strip_html(truncate(post.content, {length: theme.meta.auto_excerpt.length})) %>
         </p>
     <% } %>
